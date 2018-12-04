@@ -1,0 +1,7 @@
+custom_rest_test.get_latest_nodes:
+  path: 'rest-endpoint/latest-nodes'
+  defaults:
+    _controller: 'Drupal\custom_rest_test\Controller\CustomRestController::getLatestNodes'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
