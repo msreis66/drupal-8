@@ -1,7 +1,15 @@
-custom_rest_test.get_latest_nodes:
-  path: 'rest-endpoint/latest-nodes'
+hydramaze_tutorial.get_algorithms_list:
+  path: 'hydramaze-tutorial/algorithms-list'
   defaults:
-    _controller: 'Drupal\custom_rest_test\Controller\CustomRestController::getLatestNodes'
+    _controller: 'Drupal\hydramaze_tutorial\Controller\HydramazeTutorialController::getAlgorithmsList'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+
+hydramaze_tutorial.get_algorithm_parameters:
+  path: 'hydramaze-tutorial/algorithm/{nid}'
+  defaults:
+    _controller: 'Drupal\hydramaze_tutorial\Controller\HydramazeTutorialController::getAlgorithmParameters'
   methods: [GET]
   requirements:
     _access: 'TRUE'

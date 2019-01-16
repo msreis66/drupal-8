@@ -1,4 +1,4 @@
-name: Custom Rest Module
+name: Hydramaze Tutorial Module
 description: An experimental module to build our first Drupal 8 module
 package: Custom
 type: module
